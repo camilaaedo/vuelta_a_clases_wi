@@ -14,9 +14,24 @@
   function setup(){
     var w = windowWidth-10, h = 380;
     var canvas = createCanvas(w,h);
+    noStroke();
+    smooth();
   }
   function draw(){
-    background(225);
+    background(255,121,0);
+      
+    fill(0);
+    ellipse(20,20,16,16);
+      
+    fill(255,255,0);
+    ellipse(40,20,16,16);
+      
+    fill(0,255,255);
+    ellipse(60,20,16,16);
+      
+    fill(255,0,255);
+    ellipse(mouseX,mouseY,16,16);
+      
   }    
   </script>
   </body>
